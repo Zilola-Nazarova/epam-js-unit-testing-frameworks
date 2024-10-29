@@ -1,6 +1,6 @@
 // Importing the 'expect' function from the 'chai' library to perform assertions
 const { expect } = require('chai');
-
+const { describe, it, beforeEach, afterEach } = require('mocha');
 // Importing the NumbersValidator class from the relative path '../app/numbers-validator'
 // so we can test its methods.
 const NumbersValidator = require('../../app/numbers-validator');
@@ -45,7 +45,7 @@ describe('isNumberEven', () => {
     it('should return false if number is odd', () => {
       expect(validator.isNumberEven(5)).to.be.equal(false);
     });
-      
+
     it('should throw an error when provided not a Number value', () => {
       const input = 'five';
       expect(() => {
@@ -53,5 +53,4 @@ describe('isNumberEven', () => {
       }).to.throw(`[${input}] is not of type "Number" it is of type "${typeof input}"`);
     });
   });
-
 });
