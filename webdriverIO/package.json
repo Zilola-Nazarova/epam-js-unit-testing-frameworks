@@ -25,8 +25,10 @@
   "homepage": "https://github.com/Zilola-Nazarova/epam-js-unit-testing-frameworks#readme",
   "devDependencies": {
     "@wdio/cli": "^9.2.6",
+    "@wdio/junit-reporter": "^9.2.2",
     "@wdio/local-runner": "^9.2.6",
     "@wdio/mocha-framework": "^9.2.5",
+    "@wdio/spec-reporter": "^9.2.2",
     "geckodriver": "^4.5.1",
     "wdio-geckodriver-service": "^5.0.2"
   }
