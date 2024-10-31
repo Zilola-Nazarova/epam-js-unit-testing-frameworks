@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="0" errors="0" skipped="0">
+  <testsuite name="first e2e test suite" timestamp="2024-10-31T08:16:08" time="10.306" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="first e2e test suite"/>
+      <property name="capabilities" value="chrome.130_0_6723_70.windows"/>
+      <property name="file" value="file:///D:/development/epam/epam-js-unit-testing-frameworks/webdriverIO/src/specs/test.spec.js"/>
+    </properties>
+    <testcase classname="chrome.130_0_6723_70.windows.first_e2e_test_suite" name="should open www epam com" time="4.912">
+      <system-out><![CDATA[
+COMMAND: GET /session/e5eb1d5400fc3a57689a46cbf1f1fa02/title - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.130_0_6723_70.windows.first_e2e_test_suite" name="should open hamburger menu" time="1.481">
+      <system-out><![CDATA[
+COMMAND: POST /session/e5eb1d5400fc3a57689a46cbf1f1fa02/element/f.CC3E42DFBF226477FB75EE97B4D9780C.d.C6E752392A5B5D6BFB9CE3DAD6BA88AC.e.49/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.130_0_6723_70.windows.first_e2e_test_suite" name="should navigate to Services page" time="3.912">
+      <system-out><![CDATA[
+COMMAND: POST /session/e5eb1d5400fc3a57689a46cbf1f1fa02/element/f.CC3E42DFBF226477FB75EE97B4D9780C.d.93A97BC3E736F753BDE497ADFDEDF1C1.e.83/click - {}
+RESULT: {}
+COMMAND: GET /session/e5eb1d5400fc3a57689a46cbf1f1fa02/title - {}
+RESULT: {}
+COMMAND: DELETE /session/e5eb1d5400fc3a57689a46cbf1f1fa02 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
