@@ -4,13 +4,14 @@
   "description": "Project setup task to practice unit testing frameworks with JavaScript",
   "main": "index.js",
   "scripts": {
+    "pretest": "npm run lint",
     "test": "mocha",
     "coverage": "c8 npm test",
     "lint": "eslint ./ --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zilola-Nazarova/epam-js-unit-testing-frameworks.git"
+    "url": "https://github.com/Zilola-Nazarova/epam-js-unit-testing-frameworks.git"
   },
   "keywords": [
     "mocha",
