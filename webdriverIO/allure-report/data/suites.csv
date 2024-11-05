@@ -1,7 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","2054","should open hamburger menu","","Thu Oct 31 12:59:21 UZT 2024","passed","Thu Oct 31 12:59:23 UZT 2024","","first e2e test suite","",""
-"","3249","should navigate to Services page","","Thu Oct 31 12:59:23 UZT 2024","passed","Thu Oct 31 12:59:26 UZT 2024","","first e2e test suite","",""
-"","1317","should open hamburger menu","","Thu Oct 31 12:59:36 UZT 2024","passed","Thu Oct 31 12:59:37 UZT 2024","","first e2e test suite","",""
-"","5692","should open www.epam.com","","Thu Oct 31 12:59:30 UZT 2024","passed","Thu Oct 31 12:59:36 UZT 2024","","first e2e test suite","",""
-"","5066","should open www.epam.com","","Thu Oct 31 12:59:16 UZT 2024","passed","Thu Oct 31 12:59:21 UZT 2024","","first e2e test suite","",""
-"","5383","should navigate to Services page","","Thu Oct 31 12:59:37 UZT 2024","passed","Thu Oct 31 12:59:43 UZT 2024","","first e2e test suite","",""

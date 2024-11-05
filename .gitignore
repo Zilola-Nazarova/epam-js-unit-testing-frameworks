@@ -1,4 +1,5 @@
-mocha/node_modules  
-webdriverIO/node_modules
-coverage
-mochawesome-report
+node_modules
+screenshots
+allure-report
+allure-results
+report
