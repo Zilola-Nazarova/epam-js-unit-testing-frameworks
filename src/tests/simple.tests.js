@@ -1,6 +1,10 @@
+import DashboardPage from "../po/pages/dashboard.page";
+
+const dashboardPage = new DashboardPage();
+
 describe('Doctors page', () => {
   beforeEach(async() => {
-    await browser.url('https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard');
+    await dashboardPage.open();
   });
 
   it('Check page title', async () => {
