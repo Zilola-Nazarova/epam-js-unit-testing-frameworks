@@ -1,6 +1,8 @@
 import DashboardPage from "../po/pages/dashboard.page";
+import DoctorsPage from "../po/pages/doctors.page";
 
 const dashboardPage = new DashboardPage();
+const doctorsPage = new DoctorsPage();
 
 describe('Doctors page', () => {
   beforeEach(async() => {
@@ -14,13 +16,13 @@ describe('Doctors page', () => {
 
   it('Open modal window for adding a new doctor', async () => {
     await dashboardPage.sideMenu.item('doctors').click();
-    await $('.specialization-types button.e-control').click();
+    await doctorsPage.listHeaderComponent.addNewDoctorBtn.click();
     await expect($('.new-doctor-dialog')).toBeDisplayed();
   });
 
   it('Open modal window for adding a new doctor', async () => {
     await dashboardPage.sideMenu.item('doctors').click();
-    await $('.specialization-types button.e-control').click();
+    await doctorsPage.listHeaderComponent.addNewDoctorBtn.click();
     await $('.new-doctor-dialog').waitForDisplayed();
 
     await $("[name='Name']").setValue('John Doe');
@@ -37,7 +39,7 @@ describe('Doctors page', () => {
 
   it('Open modal window for adding a new doctor', async () => {
     await dashboardPage.sideMenu.item('doctors').click();
-    await $('.specialization-types button.e-control').click();
+    await doctorsPage.listHeaderComponent.addNewDoctorBtn.click();
     await $('.new-doctor-dialog').waitForDisplayed();
 
     await $('.new-doctor-dialog .e-dlg-closeicon-btn').click();
