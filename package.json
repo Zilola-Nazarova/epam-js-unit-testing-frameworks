@@ -1,5 +1,8 @@
 {
   "name": "epam-js-unit-testing-frameworks",
+  "version": "1.0.0",
+  "description": "POM with WebdriverIO",
+  "private": false,
   "type": "module",
   "devDependencies": {
     "@wdio/cli": "^9.2.11",
@@ -9,6 +12,6 @@
     "wdio-wait-for": "^3.0.11"
   },
   "scripts": {
-    "wdio": "wdio run ./src/configs/wdio.conf.js"
+    "test": "wdio run ./src/configs/wdio.conf.js"
   }
 }
