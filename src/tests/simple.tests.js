@@ -8,18 +8,18 @@ describe('Doctors page', () => {
   });
 
   it('Check page title', async () => {
-    await $("[routerlink='/doctors']").click();
+    await dashboardPage.sideMenu.item('doctors').click();
     await expect(browser).toHaveTitle('Appointment Planner - Syncfusion Angular Components Showcase App');
   });
 
   it('Open modal window for adding a new doctor', async () => {
-    await $("[routerlink='/doctors']").click();
+    await dashboardPage.sideMenu.item('doctors').click();
     await $('.specialization-types button.e-control').click();
     await expect($('.new-doctor-dialog')).toBeDisplayed();
   });
 
   it('Open modal window for adding a new doctor', async () => {
-    await $("[routerlink='/doctors']").click();
+    await dashboardPage.sideMenu.item('doctors').click();
     await $('.specialization-types button.e-control').click();
     await $('.new-doctor-dialog').waitForDisplayed();
 
@@ -36,7 +36,7 @@ describe('Doctors page', () => {
   });
 
   it('Open modal window for adding a new doctor', async () => {
-    await $("[routerlink='/doctors']").click();
+    await dashboardPage.sideMenu.item('doctors').click();
     await $('.specialization-types button.e-control').click();
     await $('.new-doctor-dialog').waitForDisplayed();
 
