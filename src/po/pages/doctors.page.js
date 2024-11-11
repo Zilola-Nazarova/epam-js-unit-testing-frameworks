@@ -1,8 +1,10 @@
 import ListHeaderComponent from "../components/doctors/list-header.component";
+import AddDoctorComponent from "../components/doctors/add-doctor.component";
 
 class DoctorsPage {
   constructor() {
     this.listHeaderComponent = new ListHeaderComponent();
+    this.addDoctorModal = new AddDoctorComponent();
   }
 
   async open() {
