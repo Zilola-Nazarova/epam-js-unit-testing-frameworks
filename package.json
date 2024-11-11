@@ -1,0 +1,24 @@
+{
+  "name": "bdd-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zilola-Nazarova/epam-js-unit-testing-frameworks.git"
+  },
+  "keywords": [
+    "BDD",
+    "testing",
+    "cucumber"
+  ],
+  "author": "Zilola-Nazarova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zilola-Nazarova/epam-js-unit-testing-frameworks/issues"
+  },
+  "homepage": "https://github.com/Zilola-Nazarova/epam-js-unit-testing-frameworks#readme",
+}
