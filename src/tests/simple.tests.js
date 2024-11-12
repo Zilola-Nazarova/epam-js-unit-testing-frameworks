@@ -35,8 +35,8 @@ describe('Doctors page', () => {
     
     await expect(doctorsPage.addDoctorModal.rootEl).not.toBeDisplayed();
 
-    await expect($('#Specialist_8 .name')).toHaveText('Dr. John Doe');
-    await expect($('#Specialist_8 .education')).toHaveText('Basic', { ignoreCase: true });
+    await expect(doctorsPage.specialistCard(8).name).toHaveText('Dr. John Doe');
+    await expect(doctorsPage.specialistCard(8).education).toHaveText('Basic', { ignoreCase: true });
   });
 
   it('Open modal window for adding a new doctor', async () => {
