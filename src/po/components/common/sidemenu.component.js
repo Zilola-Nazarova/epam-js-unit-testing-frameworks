@@ -4,10 +4,6 @@ class SideMenuComponent extends BaseComponent {
   constructor() {
     super('#plannerSiderBar');
   }
-  
-  get rootEl() {
-    return $('#plannerSiderBar');
-  }
 
   item(param) {
     const selectors = {
