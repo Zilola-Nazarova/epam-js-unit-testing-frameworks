@@ -25,13 +25,13 @@ describe('Doctors page', () => {
     await doctorsPage.listHeaderComponent.addNewDoctorBtn.click();
     await doctorsPage.addDoctorModal.rootEl.waitForDisplayed();
 
-    await $("[name='Name']").setValue('John Doe');
-    await $('#DoctorMobile').setValue('1111111111');
-    await $("[name='Email']").setValue('test@test.com');
-    await $("[name='Education']").setValue('Basic');
-    await $("[name='Designation']").setValue('Test');
+    await doctorsPage.addDoctorModal.input('name').setValue('John Doe');
+    await doctorsPage.addDoctorModal.input('phone').setValue('1111111111');
+    await doctorsPage.addDoctorModal.input('email').setValue('test@test.com');
+    await doctorsPage.addDoctorModal.input('education').setValue('Basic');
+    await doctorsPage.addDoctorModal.input('designation').setValue('Test');
 
-    await $('.e-footer-content button.e-primary').click();
+    await doctorsPage.addDoctorModal.saveBtn.click();
     
     await expect(doctorsPage.addDoctorModal.rootEl).not.toBeDisplayed();
 
@@ -44,7 +44,7 @@ describe('Doctors page', () => {
     await doctorsPage.listHeaderComponent.addNewDoctorBtn.click();
     await doctorsPage.addDoctorModal.rootEl.waitForDisplayed();
 
-    await $('.new-doctor-dialog .e-dlg-closeicon-btn').click();
+    await doctorsPage.addDoctorModal.closeBtn.click();
     await expect(doctorsPage.addDoctorModal.rootEl).not.toBeDisplayed();
   });
 });
