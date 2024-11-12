@@ -1,4 +1,4 @@
-import BaseComponent from "./base.component";
+const BaseComponent = require("./base.component");
 
 class HeaderComponent extends BaseComponent {
   constructor() {
@@ -10,4 +10,4 @@ class HeaderComponent extends BaseComponent {
   }
 }
 
-export default HeaderComponent;
+module.exports = HeaderComponent;

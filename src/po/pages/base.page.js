@@ -1,4 +1,4 @@
-import { Header, SideMenu } from "../components";
+const { Header, SideMenu } = require("../components");
 
 class BasePage {
   constructor(url) {
@@ -7,9 +7,9 @@ class BasePage {
     this.sideMenu = new SideMenu();
   }
 
-  async open() {
+  open() {
     return browser.url(this.url);
   }
 };
 
-export default BasePage;
+module.exports = BasePage;

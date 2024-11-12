@@ -1,4 +1,4 @@
-import BasePage from "./base.page";
+const BasePage = require("./base.page");
 
 import { DoctorListHeader, AddDoctorModal } from "../components";
 
@@ -10,4 +10,4 @@ class DoctorsPage extends BasePage {
   }
 };
 
-export default DoctorsPage;
+module.exports = DoctorsPage;

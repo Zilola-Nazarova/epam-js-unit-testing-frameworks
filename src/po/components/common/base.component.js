@@ -8,4 +8,4 @@ class BaseComponent {
   }
 };
 
-export default BaseComponent;
+module.exports = BaseComponent;

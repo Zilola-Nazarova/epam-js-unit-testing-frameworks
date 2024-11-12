@@ -1,4 +1,4 @@
-import BasePage from "./base.page";
+const BasePage = require("./base.page");
 
 class DashboardPage extends BasePage {
   constructor() {
@@ -6,4 +6,4 @@ class DashboardPage extends BasePage {
   }
 };
 
-export default DashboardPage;
+module.exports = DashboardPage;

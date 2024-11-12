@@ -1,4 +1,4 @@
-import BaseComponent from "../common/base.component";
+const BaseComponent = require("../common/base.component");
 
 class AddDoctorComponent extends BaseComponent {
   constructor() {
@@ -31,4 +31,4 @@ class AddDoctorComponent extends BaseComponent {
   }
 };
 
-export default AddDoctorComponent;
+module.exports = AddDoctorComponent;

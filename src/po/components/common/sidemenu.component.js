@@ -1,4 +1,4 @@
-import BaseComponent from "./base.component";
+const BaseComponent = require("./base.component");
 
 class SideMenuComponent extends BaseComponent {
   constructor() {
@@ -16,4 +16,4 @@ class SideMenuComponent extends BaseComponent {
   }
 }
 
-export default SideMenuComponent;
+module.exports = SideMenuComponent;

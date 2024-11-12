@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "POM with WebdriverIO",
   "private": false,
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "@wdio/cli": "^9.2.11",
     "@wdio/local-runner": "^9.2.11",

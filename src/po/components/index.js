@@ -1,5 +1,12 @@
-export { default as Header } from "./common/header.component";
-export { default as SideMenu } from "./common/sidemenu.component";
+const Header = require("./common/header.component");
+const SideMenu = require("./common/sidemenu.component");
 
-export { default as AddDoctorModal } from "./doctors/add-doctor.component";
-export { default as DoctorListHeader } from "./doctors/list-header.component";
+const AddDoctorModal = require("./doctors/add-doctor.component");
+const DoctorListHeader = require("./doctors/list-header.component");
+
+module.exports = {
+  Header,
+  SideMenu,
+  AddDoctorModal,
+  DoctorListHeader
+};
