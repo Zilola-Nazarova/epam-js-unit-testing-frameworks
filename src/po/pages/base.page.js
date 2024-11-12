@@ -1,5 +1,4 @@
-import Header from "../components/common/header.component";
-import SideMenu from "../components/common/sidemenu.component";
+import { Header, SideMenu } from "../components";
 
 class BasePage {
   constructor(url) {

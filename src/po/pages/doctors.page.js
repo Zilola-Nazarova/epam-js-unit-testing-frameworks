@@ -1,13 +1,12 @@
 import BasePage from "./base.page";
 
-import ListHeaderComponent from "../components/doctors/list-header.component";
-import AddDoctorComponent from "../components/doctors/add-doctor.component";
+import { DoctorListHeader, AddDoctorModal } from "../components";
 
 class DoctorsPage extends BasePage {
   constructor() {
     super('/showcase/angular/appointmentplanner/#/doctors');
-    this.listHeaderComponent = new ListHeaderComponent();
-    this.addDoctorModal = new AddDoctorComponent();
+    this.listHeaderComponent = new DoctorListHeader();
+    this.addDoctorModal = new AddDoctorModal();
   }
 };
 
